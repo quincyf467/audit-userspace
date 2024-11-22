@@ -128,6 +128,7 @@ AC_SEARCH_LIBS(pthread_yield, pthread,
 LIBS="$OLDLIBS"
 
 withval=""
+AC_CONFIG_LINKS([bindings/python/auparse_python.c:bindings/python/auparse_python.c])
 AC_MSG_CHECKING(whether to create python3 bindings)
 AC_ARG_WITH(python3,
 AS_HELP_STRING([--with-python3],[enable building python3 bindings]),
